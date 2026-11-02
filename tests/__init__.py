@@ -1,5 +1,5 @@
 """
-TeraSim Metropolis test suite
+TeraSim-DT test suite
 
 Tests for the packages of this repository:
 - terasim-city (test_city)

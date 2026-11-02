@@ -7,7 +7,7 @@ comparison. They ship in the same repository as the core and are built against a
 documented interface, so NVIDIA, cities and integrators can author and publish their
 own operations modules without modifying the core.
 
-TeraSim Metropolis v0.1.0 provides:
+TeraSim-DT v0.1.0 provides:
 
 | Part | Where | What it is |
 |---|---|---|
@@ -458,10 +458,10 @@ dependencies = ["terasim-plugin-sdk>=0.1.0,<0.2", "terasim-city>=0.1.0,<0.2"]
 my_operation = "my_operation:MyOperation"
 ```
 
-**4. Install it next to TeraSim Metropolis** and check that the registry finds it:
+**4. Install it next to TeraSim-DT** and check that the registry finds it:
 
 ```bash
-pip install -e packages/terasim-plugin-sdk   # from a TeraSim Metropolis checkout
+pip install -e packages/terasim-plugin-sdk   # from a TeraSim-DT checkout
 pip install -e path/to/my-operation
 terasim-plugin list
 ```
@@ -481,7 +481,7 @@ section) and run `pytest`.
 
 **7. Build and publish** the distribution like any Python package (`python -m build`,
 then upload the wheel and sdist to your package index). Users install it with
-`pip install my-operation` into the environment that runs TeraSim Metropolis; nothing in
+`pip install my-operation` into the environment that runs TeraSim-DT; nothing in
 the core changes.
 
 ## Command line

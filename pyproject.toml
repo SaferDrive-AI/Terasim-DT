@@ -1,7 +1,7 @@
 [project]
 name = "terasim-metropolis"
 version = "0.2.0"
-description = "TeraSim Metropolis - corridor traffic simulation, KPI evaluation and signal timing optimization for NVIDIA Metropolis VSS"
+description = "TeraSim-DT - urban digital twin for traffic simulation and management: camera-informed demand from NVIDIA Metropolis VSS, what-if evaluation and signal timing optimization"
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.10,<3.13"

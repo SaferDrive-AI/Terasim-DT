@@ -1,7 +1,7 @@
 [project]
 name = "terasim-webster-fixed-time"
 version = "0.1.0"
-description = "Example Traffic Operation plug-in for TeraSim Metropolis: a Webster fixed-time plan from turning-movement counts"
+description = "Example Traffic Operation plug-in for TeraSim-DT: a Webster fixed-time plan from turning-movement counts"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 license = "Apache-2.0"

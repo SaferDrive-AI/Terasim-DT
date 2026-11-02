@@ -1,4 +1,4 @@
-"""Example Traffic Operation plug-in for TeraSim Metropolis: a Webster fixed-time plan."""
+"""Example Traffic Operation plug-in for TeraSim-DT: a Webster fixed-time plan."""
 
 from webster_fixed_time.plugin import PARAMS, WebsterFixedTimePlugin
 

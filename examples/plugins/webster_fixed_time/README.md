@@ -1,6 +1,6 @@
 # webster_fixed_time: an example Traffic Operation plug-in
 
-A minimal third-party operations module for TeraSim Metropolis, built on the
+A minimal third-party operations module for TeraSim-DT, built on the
 Plugin Interface (`terasim-plugin-sdk`). It derives a fixed-time plan from the
 turning-movement counts with Webster's method, simulates it next to the current
 plan on the same scenario, and recommends whichever has the lower KPI cost, as a
@@ -17,7 +17,7 @@ and is discovered through its entry point; the core is not modified.
 
 ## Install
 
-From a TeraSim Metropolis checkout, with the core packages installed:
+From a TeraSim-DT checkout, with the core packages installed:
 
 ```bash
 pip install -e packages/terasim-plugin-sdk

@@ -1,7 +1,7 @@
 apiVersion: v2
 name: terasim-phase1
 description: >
-  TeraSim Metropolis: OpenShift-ready Helm chart for the traffic-signal
+  TeraSim-DT: OpenShift-ready Helm chart for the traffic-signal
   optimization stack that NVIDIA Metropolis VSS (Video Search and
   Summarization) calls over MCP. One image, three services (terasim-service
   REST API + embedded evaluator, terasim-mcp streamable-http MCP server +
@@ -21,6 +21,7 @@ version: 0.6.1
 appVersion: "0.2.0"
 keywords:
   - terasim
+  - digital-twin
   - traffic-signal
   - nema
   - openshift

@@ -1,4 +1,4 @@
-# TeraSim Metropolis with NVIDIA Metropolis VSS on NVIDIA Brev
+# TeraSim-DT with NVIDIA Metropolis VSS on NVIDIA Brev
 
 On one GPU instance, VSS 3.3.0 counts the traffic of Market St and W Santa Clara St, San José,
 in four recorded camera videos, and TeraSim optimizes the intersection's signal timing when the
@@ -27,7 +27,7 @@ The four camera videos (GTC 2026 San José recordings) and the corridor package
 Variables used by the steps (set them in every new shell):
 
 ```bash
-REPO=~/Terasim-Metropolis SJ=~/sj-reference-corridor-0.2.0 DEPLOY=~/terasim VSS=~/video-search-and-summarization
+REPO=~/Terasim-DT SJ=~/sj-reference-corridor-0.2.0 DEPLOY=~/terasim VSS=~/video-search-and-summarization
 IP=$(ip route get 1.1.1.1 | awk '{for (i = 1; i < NF; i++) if ($i == "src") print $(i + 1)}')
 PUBLIC=<host name of the Brev secure link for port 7777, for example 7777-abcd1234.gobrev.dev>
 ```
@@ -35,7 +35,7 @@ PUBLIC=<host name of the Brev secure link for port 7777, for example 7777-abcd12
 ### Step 1. TeraSim and the sample data
 
 ```bash
-cd ~ && git clone https://github.com/SaferDrive-AI/Terasim-Metropolis.git
+cd ~ && git clone https://github.com/SaferDrive-AI/Terasim-DT.git
 docker pull ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0
 docker tag ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0 terasim-metropolis:0.2.0
 unzip -q sj-reference-corridor-0.2.0.zip

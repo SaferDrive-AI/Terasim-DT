@@ -26,7 +26,7 @@ If applicable, add screenshots to help explain your problem.
  - OS: [e.g. Ubuntu 22.04]
  - Python Version: [e.g. 3.10]
  - SUMO Version: [e.g. 1.23.1]
- - TeraSim Metropolis Version: [e.g. 0.1.0]
+ - TeraSim-DT Version: [e.g. 0.1.0]
 
 **Additional context**
 Add any other context about the problem here. 

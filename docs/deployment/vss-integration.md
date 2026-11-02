@@ -1,6 +1,6 @@
 # VSS integration
 
-TeraSim Metropolis connects to an NVIDIA Metropolis VSS (Video Search and Summarization)
+TeraSim-DT connects to an NVIDIA Metropolis VSS (Video Search and Summarization)
 deployment at three points; VSS needs no image or code changes:
 
 | Connection | Direction | Configured where |

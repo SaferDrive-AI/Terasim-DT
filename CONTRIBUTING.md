@@ -1,6 +1,13 @@
-# Contributing to TeraSim Metropolis
+# Contributing to TeraSim-DT
 
 Thank you for your interest in contributing. This guide explains how to propose changes.
+
+TeraSim-DT is an urban digital twin whose first application is signal timing. Contributions
+that add applications of the same foundation — evaluating traffic disruptions, planning for
+major events, comparing transportation designs and management strategies — are especially
+welcome, preferably as plug-ins against the
+[Plugin SDK](https://saferdrive-ai.github.io/Terasim-DT/plugins/); open an issue first to
+agree the scope.
 
 ## Ground rules
 

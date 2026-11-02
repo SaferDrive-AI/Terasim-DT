@@ -1,4 +1,4 @@
-# TeraSim Metropolis on one host: one image, three containers, plus an optional
+# TeraSim-DT on one host: one image, three containers, plus an optional
 # stand-in for the VSS behavior API.
 #   terasim-service   : REST /v1/city/* + embedded Redis      -> 127.0.0.1:8100
 #   terasim-mcp       : MCP streamable-http (/mcp) + /files   -> 127.0.0.1:9911

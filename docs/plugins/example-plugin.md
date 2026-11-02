@@ -5,7 +5,7 @@ own Python distribution. It derives a fixed-time plan from the turning-movement 
 with Webster's method, simulates it next to the current plan on the same scenario, and
 recommends whichever has the lower KPI cost, as NEMA timing with the KPI comparison.
 It uses only the public Plugin Interface (`terasim_plugin_sdk`) and the public core API
-(`terasim_city`), and TeraSim Metropolis finds it through its entry point. The
+(`terasim_city`), and TeraSim-DT finds it through its entry point. The
 [Plugin Interface page](index.md) describes the contract it implements.
 
 ## Files
@@ -103,7 +103,7 @@ Installing the distribution registers the plugin; no file of the core changes.
 
 ## Install
 
-From a TeraSim Metropolis checkout, with the core packages installed:
+From a TeraSim-DT checkout, with the core packages installed:
 
 ```bash
 pip install -e packages/terasim-plugin-sdk

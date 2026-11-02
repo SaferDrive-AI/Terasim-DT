@@ -1,4 +1,4 @@
-# TeraSim Metropolis - additions to the VSS agent's config.yml (back it up, then restart the agent).
+# TeraSim-DT - additions to the VSS agent's config.yml (back it up, then restart the agent).
 # Exact texts: docs/deployment/vss-integration.md of the source tree, "VSS agent configuration".
 
 # 1. Tool group: after function_groups.video_analytics_mcp, before functions:

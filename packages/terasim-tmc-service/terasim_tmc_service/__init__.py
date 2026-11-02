@@ -1,1 +1,1 @@
-"""TMC microservice of TeraSim Metropolis: intersection registry, periodic TMC generator, injector."""
+"""TMC microservice of TeraSim-DT: intersection registry, periodic TMC generator, injector."""

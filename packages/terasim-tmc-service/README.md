@@ -1,6 +1,6 @@
 # terasim-tmc-service
 
-The TMC (turning-movement count) microservice of TeraSim Metropolis. It turns the
+The TMC (turning-movement count) microservice of TeraSim-DT. It turns the
 behavior objects of NVIDIA Metropolis VSS (Video Search and Summarization) into
 turning-movement counts for the TeraSim city service:
 

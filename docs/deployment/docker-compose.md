@@ -1,6 +1,6 @@
 # Docker Compose
 
-`apps/deploy/city/phase1/compose.yml` runs TeraSim Metropolis on one host: the three services
+`apps/deploy/city/phase1/compose.yml` runs TeraSim-DT on one host: the three services
 from one image, plus an optional stand-in for the VSS behavior API so the stack runs without
 cameras.
 

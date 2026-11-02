@@ -1,4 +1,4 @@
-# TeraSim Metropolis test suite
+# TeraSim-DT test suite
 
 The tests run against the packages under `packages/` and use only synthetic
 data: the demo corridor in `examples/corridor_demo` (a three-signal arterial,

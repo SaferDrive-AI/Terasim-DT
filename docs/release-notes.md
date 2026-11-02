@@ -33,10 +33,10 @@ docker pull ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0
 
 ## v0.1.0
 
-The first release of TeraSim Metropolis: simulation-based traffic signal timing optimization for
+The first release of TeraSim-DT: simulation-based traffic signal timing optimization for
 NVIDIA Metropolis VSS (Video Search and Summarization). The complete list of changes and the
 package versions are in `CHANGELOG.md` at the root of the repository; the documentation is at
-https://saferdrive-ai.github.io/Terasim-Metropolis/.
+https://saferdrive-ai.github.io/Terasim-DT/.
 
 ### Highlights
 

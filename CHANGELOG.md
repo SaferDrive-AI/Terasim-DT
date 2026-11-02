@@ -6,6 +6,17 @@ All notable changes to this project are documented in this file. The format foll
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed the repository from `Terasim-Metropolis` to `Terasim-DT` and repositioned the
+  project in the documentation: TeraSim-DT is an urban digital twin for traffic simulation
+  and management, and signal timing optimization is its first application. Old
+  `github.com/SaferDrive-AI/Terasim-Metropolis` URLs redirect to the new name; the
+  documentation site moved to <https://saferdrive-ai.github.io/Terasim-DT/> and the old site
+  URL is no longer served. Published artifact names are unchanged through the 0.2.x series:
+  container image `ghcr.io/saferdrive-ai/terasim-metropolis`, Helm chart `terasim-phase1`,
+  Python distribution `terasim-metropolis`.
+
 ## [0.2.0] - 2026-10-28
 
 ### Added
@@ -35,7 +46,7 @@ All notable changes to this project are documented in this file. The format foll
 
 ## [0.1.0] - 2026-10-27
 
-First public release of TeraSim Metropolis: the Phase 1 open-source MVP.
+First public release of TeraSim-DT: the Phase 1 open-source MVP.
 
 ### Added
 
@@ -115,5 +126,5 @@ First public release of TeraSim Metropolis: the Phase 1 open-source MVP.
 | terasim-plugin-sdk | 0.1.0 |
 | Helm chart terasim-phase1 | 0.6.0 (appVersion 0.1.0) |
 
-[0.2.0]: https://github.com/SaferDrive-AI/Terasim-Metropolis/releases/tag/v0.2.0
-[0.1.0]: https://github.com/SaferDrive-AI/Terasim-Metropolis/releases/tag/v0.1.0
+[0.2.0]: https://github.com/SaferDrive-AI/Terasim-DT/releases/tag/v0.2.0
+[0.1.0]: https://github.com/SaferDrive-AI/Terasim-DT/releases/tag/v0.1.0

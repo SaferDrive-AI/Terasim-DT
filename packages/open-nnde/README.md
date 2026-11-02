@@ -1,7 +1,7 @@
 # open-nnde
 
 Neural NDE traffic on the public MTR network (Motion Transformer, Apache-2.0), for research: a
-runtime with the interface TeraSim Metropolis expects from the Neural NDE runtime module
+runtime with the interface TeraSim-DT expects from the Neural NDE runtime module
 (`csim`, `cnde`, `tools.dataset`), backed by MTR. No model weights are part of this repository.
 
 Build, weights, check and use: [docs/developer-guide/open-neural-nde.md](../../docs/developer-guide/open-neural-nde.md).

@@ -1,6 +1,6 @@
 # Third-party notices
 
-TeraSim Metropolis is licensed under the Apache License, Version 2.0 (LICENSE, NOTICE).
+TeraSim-DT is licensed under the Apache License, Version 2.0 (LICENSE, NOTICE).
 It uses the third-party components listed below. Each component remains under its own
 license; this file summarizes them for redistribution. License texts ship with each
 component (the `licenses/` folder or `*.dist-info` directory of every Python package, and

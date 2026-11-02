@@ -1,6 +1,6 @@
 # terasim-plugin-sdk
 
-The Plugin Interface / SDK of TeraSim Metropolis. Traffic Operation plug-ins are
+The Plugin Interface / SDK of TeraSim-DT. Traffic Operation plug-ins are
 installable Python modules that turn a road network, a turning-movement-count (TMC)
 snapshot, the current signal timing and KPI weights into a recommended NEMA timing
 plan with a before/after KPI comparison, without changes to the core.
@@ -23,7 +23,7 @@ The package provides:
 
 ## Install
 
-From a TeraSim Metropolis checkout, with the core packages installed:
+From a TeraSim-DT checkout, with the core packages installed:
 
 ```bash
 pip install -e packages/terasim-plugin-sdk

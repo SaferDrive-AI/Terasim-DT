@@ -12,7 +12,11 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # Pinned: on ubuntu-26.04 (what ubuntu-latest resolves to since late October 2026) the
+    # terasim-nde-nade extensions abort NADE runs with glibc heap corruption ("corrupted size
+    # vs. prev_size"). The 24.04 toolchain is the environment every green run used. Hunt the
+    # latent memory bug in the extensions before unpinning.
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         python-version: ["3.10", "3.11"]
