@@ -1,6 +1,6 @@
 # Configuration system
 
-TeraSim Metropolis is configured on four levels. Each has one home:
+TeraSim-DT is configured on four levels. Each has one home:
 
 | Level | Format | Read by | Scope |
 | --- | --- | --- | --- |

@@ -1,4 +1,4 @@
-TeraSim Metropolis ({{ .Chart.AppVersion }}) installed as release "{{ .Release.Name }}" in namespace "{{ .Release.Namespace }}".
+TeraSim-DT ({{ .Chart.AppVersion }}) installed as release "{{ .Release.Name }}" in namespace "{{ .Release.Namespace }}".
 
 Services (ClusterIP):
   terasim-service : {{ include "terasim-phase1.serviceHost" . }}:{{ .Values.service.port }}   (REST /v1/city/*)

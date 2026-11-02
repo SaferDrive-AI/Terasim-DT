@@ -1,6 +1,6 @@
 # License
 
-TeraSim Metropolis is released under the **Apache License, Version 2.0**. The license text is
+TeraSim-DT is released under the **Apache License, Version 2.0**. The license text is
 in `LICENSE` at the root of the repository; the packages `terasim`, `terasim-nde-nade` and
 `terasim-service` carry a copy in their own directories.
 

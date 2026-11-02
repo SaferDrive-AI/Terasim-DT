@@ -1,7 +1,11 @@
-# TeraSim Metropolis
+# TeraSim-DT
 
-TeraSim Metropolis turns the turning-movement counts that NVIDIA Metropolis VSS (Video Search
-and Summarization) derives from intersection cameras into better traffic signal timing.
+TeraSim-DT is an urban digital twin for traffic simulation and management. It turns the
+observations that NVIDIA Metropolis VSS (Video Search and Summarization) derives from
+intersection cameras into simulation-ready traffic demand, so that engineers can test what-if
+questions — a stalled vehicle, a major event, a different signal timing strategy — in
+simulation before committing field resources. The first packaged application is traffic
+signal timing.
 
 This site documents release **v0.2.0**: the Python packages, the container image
 `terasim-metropolis:0.2.0`, the Helm chart `terasim-phase1` (chart version 0.6.1) and the
@@ -13,11 +17,13 @@ synthetic examples that exercise the whole chain.
 VSS cameras
    │  turning-movement counts, every observation window
    ▼
-simulated corridor: the map, driven by the observed demand
-   │  candidate timing plans, seeded from the current plan
+digital twin of the corridor: the map, driven by the observed demand
+   │  what-if candidates — in the first application: timing plans seeded from the current plan
    ▼
 best plan ──► NEMA timing plan + KPI comparison + timing report (PDF)
 ```
+
+For the signal-timing application:
 
 - **Input**: turning-movement counts (TMC) per intersection, approach and turn, produced every
   observation window from VSS behavior objects; the corridor map (OpenDRIVE, Lanelet2,
@@ -29,7 +35,14 @@ best plan ──► NEMA timing plan + KPI comparison + timing report (PDF)
 - **Output**: a coordinated NEMA timing plan (`terasim.nema_timing.v1`), the KPIs of the current
   and the optimized plan, simulated signal-performance measures and a timing report PDF.
 
-## Contract modules
+## Beyond signal timing
+
+Signal optimization is the first application, not the scope. The same foundation — observed
+demand driving a simulated road network — extends to evaluating traffic disruptions, planning
+for major events, and comparing transportation designs and management strategies. The
+[Plugin SDK](plugins/index.md) is the seam for new applications.
+
+## Modules
 
 | Module | Scope | Package |
 | --- | --- | --- |

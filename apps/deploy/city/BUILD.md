@@ -1,4 +1,4 @@
-# Building the TeraSim Metropolis image
+# Building the TeraSim-DT image
 
 The image `terasim-metropolis:0.2.0` is built from `apps/deploy/city/Dockerfile`. How to run
 it: `README.md`.

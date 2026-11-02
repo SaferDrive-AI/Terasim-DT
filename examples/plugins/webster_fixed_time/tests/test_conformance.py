@@ -2,7 +2,7 @@
 
 It runs the plugin on the synthetic three-signal demo corridor through the SDK's
 conformance kit. ``TERASIM_CORRIDOR_DEMO`` points at ``examples/corridor_demo`` of a
-TeraSim Metropolis checkout; inside the repository it is found automatically.
+TeraSim-DT checkout; inside the repository it is found automatically.
 """
 
 from __future__ import annotations

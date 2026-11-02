@@ -1,16 +1,32 @@
 # TeraSim-DT
 
-[![CI](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/ci.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/ci.yml)
-[![Docs](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/docs.yml/badge.svg)](https://saferdrive-ai.github.io/Terasim-Metropolis/)
-[![Images](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/images.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-Metropolis/pkgs/container/terasim-metropolis)
+[![CI](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/ci.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/ci.yml)
+[![Docs](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/docs.yml/badge.svg)](https://saferdrive-ai.github.io/Terasim-DT/)
+[![Images](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/images.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-DT/pkgs/container/terasim-metropolis)
 
-TeraSim Metropolis optimizes the signal timing of city corridors in simulation. From a corridor
-map, turning-movement counts and the city's current timing plan, it produces an optimized NEMA
-timing plan with its KPIs (control delay, stops per vehicle) and a PDF timing report, when the
-NVIDIA Metropolis VSS agent asks for it through MCP tools (On-Demand) or on a cadence (Scheduled).
-It collects the counts from VSS every 10 minutes.
+TeraSim-DT is an open-source urban digital twin for traffic simulation and management. It
+turns camera observations into simulation-ready traffic demand, so that cities, researchers
+and developers can test what-if questions in simulation before committing field resources:
+how a stalled vehicle disrupts traffic across the network, what a major event does to
+downtown, whether a different signal timing strategy keeps traffic moving.
 
-v0.2.0 · Apache-2.0 · [documentation](https://saferdrive-ai.github.io/Terasim-Metropolis/) ·
+With the NVIDIA Metropolis Blueprint for video search and summarization (VSS), the
+observations are turning-movement counts that VSS derives from intersection cameras every
+10 minutes; TeraSim-DT drives a simulated road network with that demand and evaluates changes
+to infrastructure, demand or operating strategy in minutes rather than hours of manual
+analysis.
+
+**The first application is signal timing.** From a corridor map, the observed counts and the
+city's current timing plan, TeraSim-DT searches candidate plans in simulation and returns a
+recommended NEMA timing plan with before-and-after KPIs (control delay, stops per vehicle) and
+a PDF timing report — when the VSS agent asks for it through MCP tools (On-Demand) or on a
+cadence (Scheduled). In the [reference deployment](deployment/brev/README.md) (four recorded
+camera feeds of a busy downtown intersection, one NVIDIA Brev instance with 2 × RTX PRO 6000
+Blackwell), an optimization returns in under two minutes, and the recommended plans reduce
+simulated control delay by 5–27 % against the intersection's existing plan. Improvements are
+measured in simulation; field deployment requires engineering review and validation.
+
+v0.2.0 · Apache-2.0 · [documentation](https://saferdrive-ai.github.io/Terasim-DT/) ·
 image `ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0` · [release notes](docs/release-notes.md) ·
 [changelog](CHANGELOG.md)
 
@@ -25,10 +41,10 @@ image `ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0` · [release notes](docs/r
 ## Quick start
 
 Docker, with an offline stand-in for the VSS behavior API
-([Docker Compose guide](https://saferdrive-ai.github.io/Terasim-Metropolis/deployment/docker-compose/)):
+([Docker Compose guide](https://saferdrive-ai.github.io/Terasim-DT/deployment/docker-compose/)):
 
 ```bash
-git clone https://github.com/SaferDrive-AI/Terasim-Metropolis.git && cd Terasim-Metropolis
+git clone https://github.com/SaferDrive-AI/Terasim-DT.git && cd Terasim-DT
 docker pull ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0
 docker tag ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0 terasim-metropolis:0.2.0
 docker compose -f apps/deploy/city/phase1/compose.yml --profile stub up -d
@@ -63,6 +79,14 @@ inventory into the TMC spec, the corridor configuration and the Helm values
 | C Signal timing optimization: candidates seeded from the current plan, simulation-based search, corridor coordination, NEMA output, PDF report | `terasim-city` |
 | Interfaces: HTTP API, MCP server for the VSS agent, TMC collector of VSS behavior data | `terasim-service`, `terasim-agent-skill`, `terasim-tmc-service` |
 | Plugin SDK for third-party traffic-operation modules | `terasim-plugin-sdk`, `examples/plugins/` |
+
+## Beyond signal timing
+
+Signal optimization is the first application, not the scope. The same foundation — observed
+demand driving a simulated road network — extends to evaluating traffic disruptions, planning
+for major events, and comparing transportation designs and management strategies. The
+[Plugin SDK](docs/plugins/index.md) is the seam for new applications;
+[contributions are welcome](CONTRIBUTING.md).
 
 ## License
 

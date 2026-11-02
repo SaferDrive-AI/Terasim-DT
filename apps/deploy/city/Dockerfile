@@ -1,4 +1,4 @@
-# TeraSim Metropolis: the city signal-optimization service with an embedded
+# TeraSim-DT: the city signal-optimization service with an embedded
 # Redis in one generic image. The only data baked in are the synthetic demo
 # corridor (its SUMO map and a demo scenario, see below).
 # `docker run -d -p 8000:8000 <image>`, then POST TMC snapshots, then
@@ -224,7 +224,7 @@ RUN python -c "import libsumo, traci, sumolib, terasim_city, terasim_service, te
 LABEL org.opencontainers.image.title="terasim-metropolis" \
       org.opencontainers.image.version="0.2.0" \
       org.opencontainers.image.licenses="Apache-2.0" \
-      org.opencontainers.image.description="TeraSim Metropolis signal-optimization service (terasim-service / terasim-agent-skill MCP server / terasim-tmc-service TMC collector) with embedded Redis; non-root, multi-stage" \
+      org.opencontainers.image.description="TeraSim-DT signal-optimization service (terasim-service / terasim-agent-skill MCP server / terasim-tmc-service TMC collector) with embedded Redis; non-root, multi-stage" \
       org.opencontainers.image.base.name="docker.io/library/python:${PYTHON_VERSION}-slim-bookworm" \
       org.opencontainers.image.base.digest="${BASE_DIGEST}"
 

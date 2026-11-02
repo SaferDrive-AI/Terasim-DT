@@ -61,7 +61,7 @@ EXIT_INVALID = 2
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="terasim-plugin",
-        description="List, run and check TeraSim Metropolis Traffic Operation plug-ins.",
+        description="List, run and check TeraSim-DT Traffic Operation plug-ins.",
     )
     parser.add_argument("--version", action="version", version=f"terasim-plugin-sdk {SDK_VERSION}")
     parser.add_argument(

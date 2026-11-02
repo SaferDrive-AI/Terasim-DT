@@ -1,8 +1,8 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "TeraSim Metropolis service",
-    "description": "\nTeraSim Metropolis service API. The `/v1/city` endpoints take traffic snapshots, maps and\nthe city's current signal plans, run simulation-based signal timing optimization and return\nNEMA timing plans with their KPIs. The co-simulation endpoints start and control individual\nTeraSim simulations.\n",
+    "title": "TeraSim-DT service",
+    "description": "\nTeraSim-DT service API. The `/v1/city` endpoints take traffic snapshots, maps and\nthe city's current signal plans, run simulation-based signal timing optimization and return\nNEMA timing plans with their KPIs. The co-simulation endpoints start and control individual\nTeraSim simulations.\n",
     "version": "0.1.0"
   },
   "paths": {

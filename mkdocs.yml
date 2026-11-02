@@ -1,4 +1,4 @@
-# Documentation site of TeraSim Metropolis: MkDocs with the Material theme, published to
+# Documentation site of TeraSim-DT: MkDocs with the Material theme, published to
 # GitHub Pages by .github/workflows/docs.yml.
 #
 #   pip install -r docs/requirements.txt
@@ -8,15 +8,16 @@
 # The reference pages under docs/reference/ (http-api.md, mcp-tools.md, openapi*.json) are
 # generated from the code: python docs/_scripts/gen_reference.py
 
-site_name: TeraSim Metropolis
-site_url: https://saferdrive-ai.github.io/Terasim-Metropolis/
-repo_url: https://github.com/SaferDrive-AI/Terasim-Metropolis
-repo_name: SaferDrive-AI/Terasim-Metropolis
+site_name: TeraSim-DT
+site_description: An urban digital twin for traffic simulation and management.
+site_url: https://saferdrive-ai.github.io/Terasim-DT/
+repo_url: https://github.com/SaferDrive-AI/Terasim-DT
+repo_name: SaferDrive-AI/Terasim-DT
 edit_uri: edit/main/docs/
 site_description: >-
   Simulation-based traffic signal timing optimization for NVIDIA Metropolis VSS:
   turning-movement counts in, an optimized NEMA timing plan and its KPIs out.
-copyright: TeraSim Metropolis is released under the Apache License 2.0.
+copyright: TeraSim-DT is released under the Apache License 2.0.
 
 docs_dir: docs
 # Build tooling inside docs/ that is not part of the published site.

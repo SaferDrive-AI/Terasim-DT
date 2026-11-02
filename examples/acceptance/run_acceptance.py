@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TeraSim Metropolis v0.2.0 - end-to-end acceptance run on synthetic data.
+"""TeraSim-DT v0.2.0 - end-to-end acceptance run on synthetic data.
 
 Exercises the Phase 1 acceptance chain exactly the way a VSS agent drives it, through the
 public interfaces only (MCP tools, the HTTP API, the TMC collector):
@@ -188,7 +188,7 @@ class Report:
         else:
             horizon = f"simulated horizon per candidate: {self.meta.get('sim_end_s')} s"
         lines = [
-            "# TeraSim Metropolis acceptance run",
+            "# TeraSim-DT acceptance run",
             "",
             f"- Result: **{doc['result']}** ({', '.join(f'{k} {v}' for k, v in sorted(counts.items()))})",
             f"- Started {doc['started_at']}, duration {doc['duration_s']} s",

@@ -1,7 +1,7 @@
 # Helm on OpenShift
 
 The Helm chart `apps/deploy/city/helm/terasim-phase1` (chart version 0.6.1, app version 0.2.0)
-deploys the TeraSim Metropolis side of a VSS integration on OpenShift or Kubernetes. VSS itself
+deploys the TeraSim-DT side of a VSS integration on OpenShift or Kubernetes. VSS itself
 is deployed separately.
 
 ## What it deploys

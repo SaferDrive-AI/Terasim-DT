@@ -1,6 +1,6 @@
-# TeraSim Metropolis — deployment guide
+# TeraSim-DT — deployment guide
 
-TeraSim Metropolis optimizes the signal timing of corridors that NVIDIA Metropolis VSS
+TeraSim-DT optimizes the signal timing of corridors that NVIDIA Metropolis VSS
 (Video Search and Summarization) observes. VSS detects and tracks vehicles; the TeraSim
 TMC collector turns its behavior objects into turning-movement counts (TMC); the TeraSim
 service simulates the corridor in SUMO, searches cycle, splits and offsets, and returns a

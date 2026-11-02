@@ -1,4 +1,4 @@
-# TeraSim Metropolis — chart defaults (OpenShift-ready).
+# TeraSim-DT — chart defaults (OpenShift-ready).
 #
 # These are CHART DEFAULTS, not environment-specific overrides. For a real
 # install (a site's cluster) put overrides in a separate values file, e.g.

@@ -1,7 +1,10 @@
 # Architecture
 
-TeraSim Metropolis is a signal-optimization service built on the TeraSim traffic simulation
-engine. It runs next to an NVIDIA Metropolis VSS (Video Search and Summarization) deployment.
+TeraSim-DT is an urban digital twin for traffic simulation and management, built on the
+TeraSim traffic simulation engine. It runs next to an NVIDIA Metropolis VSS (Video Search and
+Summarization) deployment, turns VSS's camera observations into traffic demand for a simulated
+road network, and evaluates what-if scenarios in simulation. The service described here is the
+first application: signal-timing optimization.
 
 ## Components
 

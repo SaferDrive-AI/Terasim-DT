@@ -1,6 +1,6 @@
 # terasim-phase1 — Helm chart (OpenShift-ready)
 
-Deploys the TeraSim Metropolis signal-optimization stack that the NVIDIA Metropolis
+Deploys the TeraSim-DT signal-optimization stack that the NVIDIA Metropolis
 VSS (Video Search and Summarization) agent calls over MCP. **VSS itself is deployed
 separately by the operator** (this chart is only the TeraSim side). It follows the
 conventions of NVIDIA's OpenShift VSS chart (`global.externalHost/externalScheme`,

@@ -1,4 +1,4 @@
-"""TeraSim Metropolis Plugin Interface / SDK.
+"""TeraSim-DT Plugin Interface / SDK.
 
 Traffic Operation plug-ins are installable Python modules that turn a map, a TMC
 snapshot, the current signal plan and KPI weights into a recommended NEMA timing

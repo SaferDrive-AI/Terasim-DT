@@ -1,7 +1,7 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "TeraSim Metropolis TMC collector",
+    "title": "TeraSim-DT TMC collector",
     "version": "0.2.0"
   },
   "paths": {

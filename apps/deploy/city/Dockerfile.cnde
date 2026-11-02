@@ -1,4 +1,4 @@
-# TeraSim Metropolis with the optional Neural NDE (CNDE) GPU runtime, derived from the
+# TeraSim-DT with the optional Neural NDE (CNDE) GPU runtime, derived from the
 # release image (apps/deploy/city/Dockerfile).
 #
 # Adds what the "cnde" vehicle behavior needs at run time: PyTorch with CUDA, the runtime's
@@ -98,4 +98,4 @@ USER 1001:0
 LABEL org.opencontainers.image.title="terasim-metropolis" \
       org.opencontainers.image.version="0.2.0-cnde" \
       org.opencontainers.image.licenses="NOASSERTION" \
-      org.opencontainers.image.description="TeraSim Metropolis with the optional Neural NDE (CNDE) GPU runtime; mount the model checkpoint at /app/TeraSim/packages/cnde/assets/nn_weights.pth"
+      org.opencontainers.image.description="TeraSim-DT with the optional Neural NDE (CNDE) GPU runtime; mount the model checkpoint at /app/TeraSim/packages/cnde/assets/nn_weights.pth"

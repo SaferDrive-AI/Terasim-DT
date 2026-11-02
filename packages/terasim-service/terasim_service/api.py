@@ -74,7 +74,7 @@ def run_simulation_process(simulation_id: str, config: dict, auto_run: bool, ena
 
 
 description = """
-TeraSim Metropolis service API. The `/v1/city` endpoints take traffic snapshots, maps and
+TeraSim-DT service API. The `/v1/city` endpoints take traffic snapshots, maps and
 the city's current signal plans, run simulation-based signal timing optimization and return
 NEMA timing plans with their KPIs. The co-simulation endpoints start and control individual
 TeraSim simulations.
@@ -131,7 +131,7 @@ async def _lifespan(_app: FastAPI):
 
 
 app = FastAPI(
-    title="TeraSim Metropolis service",
+    title="TeraSim-DT service",
     description=description,
     version="0.1.0",
     openapi_tags=tags_metadata,

@@ -452,7 +452,7 @@ def demo_request(
 ) -> OperationRequest:
     """A small request on the synthetic three-signal demo corridor.
 
-    ``corridor_dir`` is ``examples/corridor_demo`` of a TeraSim Metropolis checkout
+    ``corridor_dir`` is ``examples/corridor_demo`` of a TeraSim-DT checkout
     (``demo.sumocfg``, ``demo_tmc.json``, ``baseline_sheet.json``); the corridor runs
     from ``i1`` to ``i3`` (signals J1, J2, J3). ``current_plan`` is
     ``"timing_sheet"`` (the demo's 90 s sheet), ``"scenario_programs"`` or ``None``.

@@ -3,11 +3,11 @@
 `packages/open-nnde` is an open runtime for Neural NDE traffic (`traffic_model="cnde"`, see
 [Behavior models](behavior-models.md)) on the public **MTR** network
 ([Motion Transformer](https://github.com/sshaoshuai/MTR), Apache-2.0). With an MTR checkpoint,
-every Neural NDE path of TeraSim Metropolis runs unchanged: the HTTP API and MCP tools, the
+every Neural NDE path of TeraSim-DT runs unchanged: the HTTP API and MCP tools, the
 re-evaluation stage and the check script.
 
 !!! warning "Research use"
-    No model weights are distributed with TeraSim Metropolis. MTR checkpoints trained on the
+    No model weights are distributed with TeraSim-DT. MTR checkpoints trained on the
     Waymo Open Motion Dataset are "Derivative IP" under the
     [Waymo Dataset License Agreement for Non-Commercial Use](https://waymo.com/open/terms/):
     non-commercial use only, never in a product or service to customers; results must credit

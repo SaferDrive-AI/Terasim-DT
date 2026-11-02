@@ -127,7 +127,7 @@ jobs:
             echo "::error::docs/release-notes.md has no section '## v$VERSION'"
             exit 1
           fi
-          title="TeraSim Metropolis $GITHUB_REF_NAME"
+          title="TeraSim-DT $GITHUB_REF_NAME"
           if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
             gh release edit "$GITHUB_REF_NAME" --title "$title" --notes-file "$RUNNER_TEMP/notes.md"
           else

@@ -4,7 +4,7 @@ The module derives a fixed-time plan from the turning-movement counts with
 Webster's method, simulates it next to the current plan on the same scenario,
 and recommends whichever has the lower KPI cost. It is built only on the public
 Plugin Interface (``terasim_plugin_sdk``) and the public core API
-(``terasim_city``), and reaches TeraSim Metropolis through its entry point
+(``terasim_city``), and reaches TeraSim-DT through its entry point
 (see ``pyproject.toml``); nothing in the core changes.
 """
 
