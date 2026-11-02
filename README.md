@@ -1,4 +1,4 @@
-# TeraSim Metropolis
+# TeraSim-DT
 
 [![CI](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/ci.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/ci.yml)
 [![Docs](https://github.com/SaferDrive-AI/Terasim-Metropolis/actions/workflows/docs.yml/badge.svg)](https://saferdrive-ai.github.io/Terasim-Metropolis/)
