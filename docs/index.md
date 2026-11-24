@@ -7,6 +7,16 @@ questions — a stalled vehicle, a major event, a different signal timing strate
 simulation before committing field resources. The first packaged application is traffic
 signal timing.
 
+<figure>
+  <video controls preload="metadata" playsinline poster="assets/terasim-dt-demo-poster.jpg" style="width: 100%; height: auto;">
+    <source src="assets/terasim-dt-demo.mp4" type="video/mp4">
+    <a href="assets/terasim-dt-demo.mp4">Download the demo video (MP4, 48 s)</a>
+  </video>
+  <figcaption>Demo, 48 s: from intersection cameras to a recommended NEMA timing plan.</figcaption>
+</figure>
+
+![TeraSim-DT architecture: intersection cameras feed NVIDIA Metropolis VSS, whose turning-movement counts drive the TeraSim-DT digital twin together with the corridor map and the current timing plan; candidate plans are simulated with SUMO or Neural NDE (MTR) traffic and scored on control delay and stops, and the recommended NEMA plan, KPIs and PDF report go back to the VSS agent through MCP tools, On-Demand or Scheduled](assets/terasim-dt-architecture.svg)
+
 This site documents release **v0.2.0**: the Python packages, the container image
 `terasim-metropolis:0.2.0`, the Helm chart `terasim-phase1` (chart version 0.6.1) and the
 synthetic examples that exercise the whole chain.

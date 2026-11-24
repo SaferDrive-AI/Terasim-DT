@@ -4,6 +4,10 @@
 [![Docs](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/docs.yml/badge.svg)](https://saferdrive-ai.github.io/Terasim-DT/)
 [![Images](https://github.com/SaferDrive-AI/Terasim-DT/actions/workflows/images.yml/badge.svg)](https://github.com/SaferDrive-AI/Terasim-DT/pkgs/container/terasim-metropolis)
 
+https://github.com/user-attachments/assets/9291ed91-f699-49e5-9976-df56167a85ac
+
+*Demo, 48 s: from intersection cameras to a recommended NEMA timing plan.*
+
 TeraSim-DT is an open-source urban digital twin for traffic simulation and management. It
 turns camera observations into simulation-ready traffic demand, so that cities, researchers
 and developers can test what-if questions in simulation before committing field resources:
@@ -25,6 +29,8 @@ camera feeds of a busy downtown intersection, one NVIDIA Brev instance with 2 ×
 Blackwell), an optimization returns in under two minutes, and the recommended plans reduce
 simulated control delay by 5–27 % against the intersection's existing plan. Improvements are
 measured in simulation; field deployment requires engineering review and validation.
+
+![TeraSim-DT architecture: intersection cameras feed NVIDIA Metropolis VSS, whose turning-movement counts drive the TeraSim-DT digital twin together with the corridor map and the current timing plan; candidate plans are simulated with SUMO or Neural NDE (MTR) traffic and scored on control delay and stops, and the recommended NEMA plan, KPIs and PDF report go back to the VSS agent through MCP tools, On-Demand or Scheduled](docs/assets/terasim-dt-architecture.svg)
 
 v0.2.0 · Apache-2.0 · [documentation](https://saferdrive-ai.github.io/Terasim-DT/) ·
 image `ghcr.io/saferdrive-ai/terasim-metropolis:0.2.0` · [release notes](docs/release-notes.md) ·

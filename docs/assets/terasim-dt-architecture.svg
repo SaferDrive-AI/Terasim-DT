@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 564" width="1000" height="564" role="img" aria-labelledby="title desc">
+  <title id="title">TeraSim-DT architecture</title>
+  <desc id="desc">Intersection cameras feed NVIDIA Metropolis VSS, which yields turning-movement counts every 10 minutes. TeraSim-DT drives a digital twin of the corridor with those counts, the corridor map and the city's current timing plan, simulates candidate timing plans with SUMO or Neural NDE (MTR) traffic, compares their control delay and stops per vehicle with the current plan, and returns a recommended NEMA timing plan, its KPIs and a PDF timing report to the NVIDIA Metropolis VSS agent through MCP tools, On-Demand or Scheduled.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1A8A57"/>
+    </marker>
+    <marker id="arrow-mcp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D6A8F"/>
+    </marker>
+    <style>
+      text { font-family: Helvetica, Arial, "Liberation Sans", "Nimbus Sans", sans-serif; fill: #1B2430; }
+      .h { font-size: 18px; font-weight: 700; }
+      .s { font-size: 15px; font-weight: 600; }
+      .b { font-size: 14px; fill: #5E6E7E; }
+      .m { font-family: Menlo, Consolas, "Liberation Mono", "DejaVu Sans Mono", monospace; font-size: 12px; fill: #2D6A8F; }
+      .k { font-size: 13px; fill: #5E6E7E; }
+      .card { fill: #EDF2F0; }
+      .hi { fill: #E2F1E9; stroke: #1A8A57; stroke-width: 1.5; }
+      .flow { stroke: #1A8A57; stroke-width: 2; fill: none; }
+      .mcp { stroke: #2D6A8F; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Opaque light background, so the diagram reads the same on light and dark pages -->
+  <rect x="0.75" y="0.75" width="998.5" height="562.5" rx="14" fill="#FFFFFF" stroke="#D3DCD8" stroke-width="1.5"/>
+
+  <!-- Inputs to the twin besides the counts -->
+  <rect x="270" y="18" width="460" height="86" rx="10" fill="#F4F7F6" stroke="#D3DCD8"/>
+  <line x1="500" y1="30" x2="500" y2="92" stroke="#D3DCD8"/>
+  <text text-anchor="middle"><tspan class="s" x="385" y="45">Corridor map</tspan><tspan class="b" x="385" y="66">OpenDRIVE, Lanelet2,</tspan><tspan class="b" x="385" y="85">OpenStreetMap or SUMO</tspan></text>
+  <text text-anchor="middle"><tspan class="s" x="615" y="45">Current timing plan</tspan><tspan class="b" x="615" y="66">the city's NEMA plan,</tspan><tspan class="b" x="615" y="85">seeds the search</tspan></text>
+  <path class="flow" d="M500,104 V144" marker-end="url(#arrow)"/>
+
+  <!-- Five steps: observe, understand, simulate, evaluate, support decisions -->
+  <rect class="card" x="24" y="148" width="168" height="216" rx="10"/>
+  <rect class="card" x="220" y="148" width="168" height="216" rx="10"/>
+  <rect class="hi" x="416" y="148" width="168" height="216" rx="10"/>
+  <rect class="card" x="612" y="148" width="168" height="216" rx="10"/>
+  <rect class="hi" x="808" y="148" width="168" height="216" rx="10"/>
+
+  <g text-anchor="middle">
+    <text class="h" x="108" y="190">Observe</text>
+    <text><tspan class="s" x="108" y="229">Intersection</tspan><tspan class="s" x="108" y="248">cameras</tspan><tspan class="b" x="108" y="274">traffic video feeds</tspan></text>
+
+    <text class="h" x="304" y="190">Understand</text>
+    <text><tspan class="s" x="304" y="229">NVIDIA</tspan><tspan class="s" x="304" y="248">Metropolis VSS</tspan><tspan class="b" x="304" y="274">turning-movement</tspan><tspan class="b" x="304" y="293">counts every</tspan><tspan class="b" x="304" y="312">10 minutes</tspan></text>
+    <text class="m" x="304" y="349">terasim-tmc-service</text>
+
+    <text class="h" x="500" y="190">Simulate</text>
+    <text><tspan class="s" x="500" y="229">TeraSim-DT</tspan><tspan class="s" x="500" y="248">digital twin</tspan><tspan class="b" x="500" y="274">candidate plans in</tspan><tspan class="b" x="500" y="293">SUMO or Neural</tspan><tspan class="b" x="500" y="312">NDE (MTR) traffic</tspan></text>
+    <text class="m" x="500" y="349">terasim-service</text>
+
+    <text class="h" x="696" y="190">Evaluate</text>
+    <text><tspan class="s" x="696" y="229">KPIs, before</tspan><tspan class="s" x="696" y="248">and after</tspan><tspan class="b" x="696" y="274">control delay and</tspan><tspan class="b" x="696" y="293">stops per vehicle</tspan></text>
+
+    <text class="h" x="892" y="179">Support</text>
+    <text class="h" x="892" y="200">decisions</text>
+    <text><tspan class="s" x="892" y="229">Recommended</tspan><tspan class="s" x="892" y="248">NEMA plan</tspan><tspan class="b" x="892" y="274">KPIs and a PDF</tspan><tspan class="b" x="892" y="293">timing report for</tspan><tspan class="b" x="892" y="312">engineering review</tspan></text>
+  </g>
+
+  <path class="flow" d="M194,256 H216" marker-end="url(#arrow)"/>
+  <path class="flow" d="M390,256 H412" marker-end="url(#arrow)"/>
+  <path class="flow" d="M586,256 H608" marker-end="url(#arrow)"/>
+  <path class="flow" d="M782,256 H804" marker-end="url(#arrow)"/>
+
+  <!-- The VSS agent asks over MCP and gets the result back -->
+  <path class="mcp" d="M500,430 V370" marker-end="url(#arrow-mcp)"/>
+  <text class="k" x="510" y="404">optimize request</text>
+  <path class="mcp" d="M892,366 V426" marker-end="url(#arrow-mcp)"/>
+  <text class="k" x="882" y="404" text-anchor="end">plan, KPIs, report links</text>
+
+  <rect x="24" y="430" width="952" height="114" rx="10" fill="#E4EDF4"/>
+  <text class="s" x="500" y="457" text-anchor="middle">NVIDIA Metropolis VSS agent calls TeraSim-DT through MCP tools</text>
+  <text class="m" x="500" y="476" text-anchor="middle">terasim-agent-skill</text>
+  <rect x="112" y="490" width="370" height="40" rx="8" fill="#FFFFFF"/>
+  <rect x="518" y="490" width="370" height="40" rx="8" fill="#FFFFFF"/>
+  <text text-anchor="middle" x="297" y="515"><tspan class="s">On-Demand:</tspan><tspan class="b" dx="5">an operator asks in chat</tspan></text>
+  <text text-anchor="middle" x="703" y="515"><tspan class="s">Scheduled:</tspan><tspan class="b" dx="5">called on a cadence</tspan></text>
+</svg>
